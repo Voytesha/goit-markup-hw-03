@@ -21,6 +21,25 @@
   --secondary-text-color: #000000;
 }
 
+*{
+  outline: 1px solid #771e61;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
+}
+
 body {
   background-color: var(--primary-background-color);
   color: var(--primary-text-color);
@@ -28,6 +47,13 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 ul {
   list-style: none;
 }
@@ -35,6 +61,7 @@ ul {
 a {
   text-decoration: none;
 }
+
 
 .logo {
   font-family: Raleway, sans-serif;
@@ -52,6 +79,7 @@ a {
 .studio-footer {
   color: var(--primary-background-color);
 }
+
 
 /*site-nav*/
 
@@ -76,27 +104,39 @@ a {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
+
 .hero-section {
   background-color: var(--secondary-bcg-studio);
 }
+.hero-wrap {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+  width: 696px;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-background-color);
+  margin: 0 auto;
 }
 .button {
+  display: block;
   background-color: var(--accent-color);
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
+  width: 216px;
   letter-spacing: 0.06em;
   color: var(--primary-background-color);
   cursor: pointer;
+  margin: 0 auto;
+  margin-top: 30px;
 }
 
 /*Benefits*/
@@ -107,12 +147,17 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-text-color);
+
 }
 .benefit {
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+.section-benefits {
+    padding-top: 115px;
+      padding-bottom: 47px;
 }
 /*What we can and team*/
 .we-can,
@@ -154,6 +199,11 @@ a {
   background-color: var(--accent-color);
   color: var(--primary-background-color);
 }
+
+/*создание сетки портфолио
+display: flex;
+flex-wrap: wrap;
+gap: 10px;*/
 
 .example-title {
   font-weight: 700;
