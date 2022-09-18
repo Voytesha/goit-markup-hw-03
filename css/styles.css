@@ -70,6 +70,15 @@ a {
   padding-top: 19px;
   padding-bottom: 25px;
 }
+.logo-footer {
+  display: block;
+  margin-bottom: 20px;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration-line: none;
+}
 .web {
   color: var(--accent-color);
 }
@@ -145,6 +154,7 @@ a {
   text-transform: uppercase;
   color: var(--primary-background-color);
   margin: 0 auto;
+  margin-bottom: 30px;
 }
 .button {
   display: block;
@@ -160,9 +170,13 @@ a {
   letter-spacing: 0.06em;
   color: var(--primary-background-color);
   border: var(--accent-color);
+  border-radius: 4px;
   cursor: pointer;
 }
-
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /*Benefits*/
 .section-title {
   margin-bottom: 10px;
@@ -181,8 +195,6 @@ a {
 }
 .section-benefits {
   display: flex;
-  padding-top: 94px;
-  padding-bottom: 94px;
   gap: 30px;
 }
 
@@ -191,27 +203,39 @@ a {
 }
 
 /*What we can and team*/
+.we-do {
+  padding-top: 0px;
+}
 .we-can,
 .our-team {
   padding-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   text-align: center;
-  line-height: 1, 67;
+  line-height: 1.67;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
 .we-can-photo {
   display: flex;
   gap: 30px;
-  padding-bottom: 94px;
 }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .team-members {
   display: flex;
   gap: 30px;
-  padding-bottom: 94px;
 }
+
 .team-member {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -220,6 +244,8 @@ a {
   color: var(--title-text-color);
 }
 .about-member {
+  display: block;
+  margin-bottom: 30px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -242,6 +268,7 @@ a {
 }
 .buttons-filter {
   margin-left: 8px;
+  margin-bottom: 34px;
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 22px;
@@ -259,19 +286,25 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 94px;
-  padding-bottom: 50px;
 }
 
 .flex-container {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  padding-bottom: 94px;
+  margin-bottom: 50px;
 }
 .flex-element {
   width: 370px;
+}
+.example {
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  border-left: solid 1px #eeeeee;
   border-bottom: solid 1px #eeeeee;
+  border-right: solid 1px #eeeeee;
 }
 
 .example-title {
@@ -290,8 +323,16 @@ a {
 
 .footer {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
+.foo-link {
+  margin-bottom: 9px;
+}
+.foo-link:last-child {
+  margin-bottom: 0;
+}
 .address {
   font-style: normal;
   font-weight: 400;
